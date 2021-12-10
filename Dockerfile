@@ -25,6 +25,7 @@ COPY requirements.txt .
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
 RUN chmod +x chess-engine
+RUN chmod a+x engines/vsf
 # Engine name is here ^^^^^^
 
 CMD python3 run.py
